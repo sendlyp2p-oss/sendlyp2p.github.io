@@ -6,24 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
-<!-- Floating WhatsApp Button -->
+<!-- Floating WhatsApp Button with SVG -->
 <a href="https://wa.me/916302583386"
    target="_blank"
+   aria-label="Chat on WhatsApp"
    style="
      position: fixed;
-     bottom: 20px;
-     right: 20px;
+     bottom: 22px;
+     right: 22px;
      background-color: #25D366;
-     color: white;
-     padding: 14px 16px;
+     width: 56px;
+     height: 56px;
      border-radius: 50%;
-     font-size: 20px;
-     text-decoration: none;
-     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     box-shadow: 0 6px 12px rgba(0,0,0,0.25);
      z-index: 1000;
-   "
-   aria-label="Chat on WhatsApp">
-   💬
+     text-decoration: none;
+   ">
+
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+    width="28"
+    height="28"
+    fill="#ffffff"
+    aria-hidden="true">
+
+    <path d="M16.003 3C9.383 3 4 8.383 4 15.003c0 2.647.87 5.1 2.344 7.078L4 29l7.137-2.297a11.92 11.92 0 0 0 4.866 1.031h.003c6.62 0 12.003-5.383 12.003-12.003C28.009 8.383 22.626 3 16.003 3zm6.93 17.464c-.291.819-1.697 1.567-2.337 1.656-.609.086-1.374.122-2.216-.142-.512-.161-1.168-.381-2.016-.745-3.549-1.533-5.867-5.084-6.045-5.32-.175-.236-1.446-1.924-1.446-3.672 0-1.748.91-2.608 1.232-2.965.322-.358.703-.447.939-.447.235 0 .469.003.676.013.218.011.512-.083.801.609.291.693.992 2.39 1.079 2.564.087.175.145.382.029.618-.116.235-.174.382-.348.586-.175.206-.368.46-.526.617-.174.174-.354.364-.152.71.203.348.903 1.489 1.94 2.413 1.332 1.188 2.454 1.557 2.8 1.733.348.174.552.145.755-.087.206-.235.87-1.01 1.102-1.357.235-.348.469-.291.787-.174.322.116 2.028.956 2.378 1.13.348.174.58.264.667.409.087.145.087.819-.203 1.638z"/>
+  </svg>
+
 </a>
 
 <body>
@@ -128,16 +141,23 @@
 </main>
 
 <footer>
-  <p>© Sendly. Print & Pre-Mailing Support Services.</p>
 
   <p>
-    Email: <a href="mailto:contact@sendlyp2p.in">contact@sendlyp2p.in</a>
- | Phone: <a href="tel:+916302583386">+91 6302 583 386</a>
-&nbsp;|&nbsp;
-<a href="sms:+916302583386">SMS</a>
-&nbsp;|&nbsp;
-<a href="https://wa.me/916302583386" target="_blank">WhatsApp</a>
+    © Sendly. Print & Pre-Mailing Support Services.
+  </p>
 
+  <p>
+    Email:
+    <a href="mailto:contact@sendlyp2p.in">contact@sendlyp2p.in</a>
+  </p>
+
+  <p>
+    Phone:
+    <a href="tel:+916302583386">+91 6302 583 386</a>
+    &nbsp;|&nbsp;
+    <a href="sms:+916302583386">SMS</a>
+    &nbsp;|&nbsp;
+    <a href="https://wa.me/916302583386" target="_blank">WhatsApp</a>
   </p>
 
   <p style="font-size:13px;">
@@ -148,9 +168,9 @@
   <p style="font-size:13px;">
     <a href="privacy.html">Privacy & Confidentiality</a>
   </p>
-</footer>
 
 </footer>
+
 
 </body>
 </html>

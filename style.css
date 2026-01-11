@@ -1,6 +1,30 @@
 /* ===== Global Styles ===== */
 
 body {
+  color: #2F3A44;
+  background-color: #ffffff;
+}
+
+p, li {
+  color: #2F3A44;
+}
+
+h1, h2, h3 {
+  color: #1F4FD8;
+}
+
+footer p {
+  color: #7A8691;
+}
+
+nav a {
+  color: #2F3A44;
+}
+
+nav a:hover {
+  color: #1F4FD8;
+}
+
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
   color: #222;

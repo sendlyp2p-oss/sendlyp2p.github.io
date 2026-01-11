@@ -29,6 +29,10 @@ nav a:hover {
 
 /* ===== Page Content ===== */
 
+main.container {
+  padding-top: 24px;
+}
+
 .container {
   max-width: 900px;
   margin: auto;

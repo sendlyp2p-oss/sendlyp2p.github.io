@@ -1,12 +1,12 @@
 /* ===== Global Styles ===== */
 
 body {
-  color: #2F3A44;
+  color: #124F6B;
   background-color: #ffffff;
 }
 
 p, li {
-  color: #2F3A44;
+  color: #124F6B;
 }
 
 h1, h2, h3 {
@@ -18,7 +18,7 @@ footer p {
 }
 
 nav a {
-  color: #2F3A44;
+  color: #124F6B;
 }
 
 nav a:hover {

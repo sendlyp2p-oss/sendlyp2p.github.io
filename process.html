@@ -50,7 +50,34 @@
     Sendly follows a structured, step-based approach to ensure clarity,
     accuracy, and readiness at every stage of document preparation.
   </p>
+graph TD
+    %% Step 1
+    S1["<b>Step 1: Requirement Confirmation</b><br/><font size=2>• Document category & volume<br/>• Preparation & personalization needs<br/>• Timelines & delivery expectations</font>"]
+    
+    %% Step 2
+    S2["<b>Step 2: File Review & Preparation</b><br/><font size=2>• Format & layout review<br/>• Basic proofreading<br/>• Pincode & address checks</font>"]
+    
+    %% Step 3
+    S3["<b>Step 3: Design, Editing & Data</b><br/><font size=2>• Template standardization<br/>• Variable data placement<br/>• Secure info handling</font>"]
+    
+    %% Step 4
+    S4["<b>Step 4: Printing & Pre-Mailing</b><br/><font size=2>• Batch-wise printing<br/>• Folding, insertion & envelopes<br/>• Sorting & bundling</font>"]
+    
+    %% Step 5
+    S5["<b>Step 5: Dispatch & Confirmation</b><br/><font size=2>• Batch verification<br/>• Internal readiness checks<br/>• Client completion notice</font>"]
 
+    %% Process Flow
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+
+    %% Styling
+    style S1 fill:#f8f9fa,stroke:#33424F,stroke-width:2px
+    style S2 fill:#f8f9fa,stroke:#33424F,stroke-width:2px
+    style S3 fill:#f8f9fa,stroke:#33424F,stroke-width:2px
+    style S4 fill:#f8f9fa,stroke:#33424F,stroke-width:2px
+    style S5 fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px
   <p>
     Each stage is executed with defined responsibility boundaries and
     controlled handling of client information.

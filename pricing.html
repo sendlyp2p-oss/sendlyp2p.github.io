@@ -153,36 +153,44 @@
 
 </main>
 
-<footer>
+<footer style="
+  border-top:1px solid #e5e5e5;
+  padding:24px 16px;
+  text-align:center;
+  font-size:14px;
+">
 
-  <p>
-    © Sendly. Print & Pre-Mailing Support Services.
-  </p>
+  <div style="margin-bottom:12px; font-weight:500; color:#2F3A44;">
+    © Sendly · Print & Pre-Mailing Support Services
+  </div>
 
-  <p>
-    Email:
+  <div style="margin-bottom:14px; color:#5F6B75;">
     <a href="mailto:contact@sendlyp2p.in">contact@sendlyp2p.in</a>
-  </p>
-
-  <p>
-    Phone:
-    <a href="tel:+916302583386">+91 6302 583 386</a>
+    &nbsp;|&nbsp;
+    <a href="tel:+916302583386">+91 63025 83386</a>
     &nbsp;|&nbsp;
     <a href="sms:+916302583386">SMS</a>
     &nbsp;|&nbsp;
     <a href="https://wa.me/916302583386" target="_blank">WhatsApp</a>
-  </p>
+  </div>
 
-  <p style="font-size:13px;">
-    Sendly is a private service provider offering printing and pre-mailing support services.
-    Posting and delivery are governed by applicable postal regulations.
-  </p>
+  <div style="
+    max-width:720px;
+    margin:0 auto 14px;
+    color:#7A8691;
+    line-height:1.6;
+  ">
+    Sendly is a private service provider offering printing and pre-mailing
+    support services. Posting and delivery are governed by applicable
+    postal regulations.
+  </div>
 
-  <p style="font-size:13px;">
+  <div>
     <a href="privacy.html">Privacy & Confidentiality</a>
-  </p>
+  </div>
 
 </footer>
+
 <script>
   fetch("/sendlyp2p.github.io/header.html")
     .then(response => response.text())

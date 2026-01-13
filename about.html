@@ -42,40 +42,39 @@
 
 <body>
 
-<header
-  style="
-    display:flex;
-    align-items:center;
-    padding:12px 20px;
-    border-bottom:1px solid #e5e5e5;
-    background:#ffffff;
-  ">
+<header class="site-header">
+  <div class="header-container">
 
-  <!-- Logo -->
- <a href="index.html" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
-  <img src="logo.svg" alt="Sendly Logo" class="logo">
+    <!-- Logo & Brand -->
+    <div class="logo-area">
+      <img src="logo.svg" alt="Sendly Logo" class="logo">
+      <div>
+        <strong>Sendly</strong><br>
+        <small>Print-to-Post Execution Partner</small>
+      </div>
+    </div>
 
-  <div style="display:flex; flex-direction:column; line-height:1.1;">
-    <span style="font-size:18px; font-weight:600; color:#222;">
-      Sendly
-    </span>
-    <span style="font-size:12px; color:#666;">
-      Print-to-Post Execution Partner
-    </span>
+    <!-- Desktop Navigation -->
+    <nav class="nav-desktop">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="process.html">Process</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav class="nav-mobile">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="process.html">Process</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
   </div>
-</a>
-
-
-  <!-- Navigation -->
-  <nav style="margin-left:auto;">
-    <a href="index.html">Home</a>
-    <a href="about.html" class="active">About</a>
-    <a href="services.html">Services</a>
-    <a href="process.html">Our Process</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
 </header>
 
 <main class="container">

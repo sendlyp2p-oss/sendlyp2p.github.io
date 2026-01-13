@@ -59,6 +59,18 @@ nav a:hover {
   text-decoration: underline;
 }
 
+nav a {
+  padding: 6px 10px;       /* space for background */
+  border-radius: 4px;      /* rounded background */
+  transition: background-color 0.2s ease;
+}
+
+nav a.active {
+  background-color: #E8EEFF; /* light brand tint */
+  color: #1F4FD8;
+  font-weight: 600;
+}
+
 /* ===== Layout ===== */
 
 .container {

@@ -1,9 +1,19 @@
-/* ===== Global Styles ===== */
+/* ===== RESET & GLOBAL ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
+  font-family: 'Merriweather', serif;
   color: #124F6B;
   background-color: #ffffff;
+  line-height: 1.6;
 }
+
+/* ===== Typography ===== */
 
 p, li {
   color: #124F6B;
@@ -13,54 +23,9 @@ h1, h2, h3 {
   color: #1F4FD8;
 }
 
-footer p {
-  color: #7A8691;
-}
-
-nav a {
-  color: #124F6B;
-}
-
-nav a:hover {
-  color: #1F4FD8;
-}
-
-  margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
-  color: #222;
-  background-color: #ffffff;
-  line-height: 1.6;
-}
-
-/* ===== Navigation ===== */
-
-nav {
-  border-bottom: 1px solid #e5e5e5;
-  padding: 15px 20px;
-  background-color: #ffffff;
-}
-
-nav a {
-  margin-right: 18px;
-  text-decoration: none;
-  color: #1f4fd8;
-  font-weight: 500;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* ===== Page Content ===== */
-
-main.container {
-  padding-top: 24px;
-}
-
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px 20px;
+p {
+  font-size: 16px;
+  margin-bottom: 16px;
 }
 
 h1 {
@@ -74,10 +39,36 @@ h2 {
   margin-bottom: 10px;
 }
 
-p {
-  font-size: 16px;
-  color: #444;
-  margin-bottom: 16px;
+/* ===== Navigation ===== */
+
+nav {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 15px 20px;
+  background-color: #ffffff;
+}
+
+nav a {
+  margin-right: 18px;
+  text-decoration: none;
+  color: #124F6B;
+  font-weight: 400;
+}
+
+nav a:hover {
+  color: #1F4FD8;
+  text-decoration: underline;
+}
+
+/* ===== Layout ===== */
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+main.container {
+  padding-top: 24px;
 }
 
 ul, ol {
@@ -93,22 +84,35 @@ li {
 .button {
   display: inline-block;
   padding: 12px 20px;
-  background-color: #1f4fd8;
+  background-color: #1F4FD8;
   color: #ffffff;
   text-decoration: none;
   border-radius: 4px;
   font-size: 16px;
 }
 
+/* ===== Logo ===== */
+
+.logo {
+  height: 42px;      /* controls logo size */
+  width: auto;       /* preserves aspect ratio */
+  max-width: 140px;  /* prevents overflow */
+}
+
 /* ===== Footer ===== */
 
 footer {
   font-size: 14px;
-  color: #666;
+  color: #7A8691;
   padding: 20px;
   text-align: center;
   border-top: 1px solid #e5e5e5;
 }
+
+footer p {
+  color: #7A8691;
+}
+
 footer a {
   color: #1F4FD8;
   text-decoration: none;
@@ -118,8 +122,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-
-/* ===== Mobile Adjustments ===== */
+/* ===== Mobile ===== */
 
 @media (max-width: 600px) {
   h1 {
@@ -132,5 +135,9 @@ footer a:hover {
 
   p {
     font-size: 15px;
+  }
+
+  .logo {
+    height: 32px;
   }
 }

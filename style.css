@@ -153,3 +153,77 @@ footer a:hover {
     height: 32px;
   }
 }
+/* ===== Header & Navigation ===== */
+
+.site-header {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 36px;
+  width: auto;
+}
+
+/* Desktop Nav */
+.nav-desktop {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-desktop a {
+  text-decoration: none;
+  color: #124F6B;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* Active Page */
+.nav-desktop a.active,
+.nav-mobile a.active {
+  background-color: #E8EEFF;
+  color: #1F4FD8;
+  font-weight: 600;
+}
+
+/* Mobile Nav */
+.nav-mobile {
+  display: none;
+  width: 100%;
+  margin-top: 12px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav-mobile a {
+    padding: 10px 12px;
+    border-radius: 6px;
+  }
+}

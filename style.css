@@ -238,17 +238,14 @@ footer a:hover {
 /* Mobile view */
 @media (max-width: 768px) {
 
-  /* Hide desktop nav */
   .nav-desktop {
     display: none;
   }
 
-  /* Show menu button */
   .menu-toggle {
     display: block;
   }
 
-  /* Show mobile nav ONLY when open */
   .nav-mobile.open {
     display: flex;
     flex-direction: column;

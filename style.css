@@ -1,6 +1,9 @@
 /* ===== RESET & GLOBAL ===== */
 
 * {
+  font-family: 'Forum', serif !important;
+}
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

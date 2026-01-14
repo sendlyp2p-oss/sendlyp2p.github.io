@@ -227,3 +227,31 @@ footer a:hover {
     border-radius: 6px;
   }
 }
+/* ===== FINAL Mobile Navigation Fix ===== */
+
+/* Mobile nav hidden by default */
+.nav-mobile {
+  display: none;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+  /* Hide desktop nav */
+  .nav-desktop {
+    display: none;
+  }
+
+  /* Show menu button */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Show mobile nav ONLY when open */
+  .nav-mobile.open {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 12px;
+  }
+}

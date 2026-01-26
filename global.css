@@ -200,6 +200,10 @@ ul {
    ====================================================== */
 
 /* Main content wrapper */
+   main {
+  display: block;
+}
+
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -253,10 +257,10 @@ main > section:first-child {
 /* ---------- HERO IMAGE ---------- */
 
 .hero-image {
-  max-width: 1100px;
-  margin: 20px auto 10px;
-  display: block;
+  max-width: 900px;        /* MATCHES content width */
   width: 100%;
+  display: block;
+  margin: 24px auto 16px;  /* centers it */
   border-radius: 6px;
 }
 
@@ -290,13 +294,13 @@ main > section:first-child {
 }
 
 .cta-inner {
-  max-width: 900px;
+  max-width: 900px;          /* SAME AS CONTENT */
   margin: auto;
   text-align: center;
   background: #ffffff;
-  padding: 40px 30px;
+  padding: 48px 32px;
   border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(11, 42, 74, 0.08);
+  box-shadow: 0 6px 18px rgba(11, 42, 74, 0.08);
 }
 
 .cta-inner h2 {
@@ -324,18 +328,19 @@ main > section:first-child {
 }
    
 }
-   @media (min-width: 1024px) {
+@media (min-width: 1024px) {
+
   .cta-section {
     padding: 80px 20px;
   }
 
   .cta-inner h2 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .cta-inner p {
-    font-size: 17px;
-    max-width: 720px;
+    font-size: 16px;
+    max-width: 680px;
     margin-left: auto;
     margin-right: auto;
   }

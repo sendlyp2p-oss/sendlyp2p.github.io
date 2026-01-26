@@ -1,307 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Us | Sendly</title>
-  
-  <style>
-    body {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      color: #222;
-      line-height: 1.6;
-      background: #ffffff;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
+  <title>About Sendly | Institutional Print & Pre-Mailing Support</title>
 
-    header {
-      padding: 40px 20px 20px;
-      border-bottom: 1px solid #eee;
-    }
+  <meta name="description" content="Learn about Sendly, a private service provider offering institutional print and pre-mailing support services to banks, educational institutions, corporates, and organizations across India.">
 
-    header h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="global.css">
 
-    header p {
-      font-size: 16px;
-      color: #555;
-    }
+</head>
 
-    section {
-      padding: 30px 0;
-      border-bottom: 1px solid #f0f0f0;
-    }
+<body>
 
-    h2 {
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
+<!-- ================= HEADER ================= -->
 
-    ul {
-      padding-left: 20px;
-    }
+<header class="site-header">
+  <div class="header-inner">
 
-    li {
-      margin-bottom: 8px;
-    }
+    <!-- Brand -->
+    <div class="brand">
+      <a href="index.html" style="display:flex; align-items:center; gap:12px;">
+        <img src="logo.svg" alt="Sendly Logo">
+        <div class="brand-text">
+          <span class="name">Sendly</span>
+          <span class="tagline">Intelligent Bulk Mailing, Simplified.</span>
+        </div>
+      </a>
+    </div>
 
-    .cta {
-      margin: 40px 0;
-      text-align: center;
-    }
+    <!-- Desktop Nav -->
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="process.html">Process</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-    .cta a {
-      display: inline-block;
-      padding: 12px 20px;
-      background: #1f4fd8;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 4px;
-      font-size: 16px;
-    }
+    <!-- Mobile Toggle -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-    footer {
-      font-size: 14px;
-      color: #666;
-      padding: 20px;
-      text-align: center;
-    }
+  </div>
+</header>
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 24px;
-      }
-      h2 {
-        font-size: 20px;
-      }
-    }
-  </style>
-  </head>
-<!-- Floating WhatsApp Button with SVG -->
-<a href="https://wa.me/916302583386"
-   target="_blank"
-   aria-label="Chat on WhatsApp"
-   style="
-     position: fixed;
-     bottom: 22px;
-     right: 22px;
-     background-color: #25D366;
-     width: 56px;
-     height: 56px;
-     border-radius: 50%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     box-shadow: 0 6px 12px rgba(0,0,0,0.25);
-     z-index: 1000;
-     text-decoration: none;
-   ">
+<!-- Mobile Slide Menu -->
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="toggleMenu()">Home</a>
+  <a href="about.html" class="active" onclick="toggleMenu()">About</a>
+  <a href="services.html" onclick="toggleMenu()">Services</a>
+  <a href="process.html" onclick="toggleMenu()">Process</a>
+  <a href="pricing.html" onclick="toggleMenu()">Pricing</a>
+  <a href="contact.html" onclick="toggleMenu()">Contact</a>
+</nav>
 
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 32 32"
-    width="28"
-    height="28"
-    fill="#ffffff"
-    aria-hidden="true">
+<!-- ================= PAGE CONTENT ================= -->
 
-    <path d="M16.003 3C9.383 3 4 8.383 4 15.003c0 2.647.87 5.1 2.344 7.078L4 29l7.137-2.297a11.92 11.92 0 0 0 4.866 1.031h.003c6.62 0 12.003-5.383 12.003-12.003C28.009 8.383 22.626 3 16.003 3zm6.93 17.464c-.291.819-1.697 1.567-2.337 1.656-.609.086-1.374.122-2.216-.142-.512-.161-1.168-.381-2.016-.745-3.549-1.533-5.867-5.084-6.045-5.32-.175-.236-1.446-1.924-1.446-3.672 0-1.748.91-2.608 1.232-2.965.322-.358.703-.447.939-.447.235 0 .469.003.676.013.218.011.512-.083.801.609.291.693.992 2.39 1.079 2.564.087.175.145.382.029.618-.116.235-.174.382-.348.586-.175.206-.368.46-.526.617-.174.174-.354.364-.152.71.203.348.903 1.489 1.94 2.413 1.332 1.188 2.454 1.557 2.8 1.733.348.174.552.145.755-.087.206-.235.87-1.01 1.102-1.357.235-.348.469-.291.787-.174.322.116 2.028.956 2.378 1.13.348.174.58.264.667.409.087.145.087.819-.203 1.638z"/>
+<main class="container">
+
+  <section class="page-header">
+    <h1>About Sendly</h1>
+    <p>
+      Sendly supports organisations that manage high-volume,
+      document-based communication as part of their administrative
+      and operational workflows.
+    </p>
+  </section>
+
+  <section>
+    <p>
+      For many institutions, activities such as printing, folding,
+      inserting, and preparing documents for dispatch consume
+      significant staff time and operational effort, despite not being
+      core business functions.
+    </p>
+
+    <p>
+      Sendly exists to take ownership of these execution-heavy tasks,
+      allowing organisations to focus on approvals, governance, and
+      service delivery.
+    </p>
+  </section>
+
+  <section>
+    <h2>Reducing Operational Costs</h2>
+
+    <p>
+      Managing document preparation in-house often requires maintaining
+      printing infrastructure, allocating manpower, and handling peak
+      workload variations.
+    </p>
+
+    <p>
+      Sendly helps reduce these costs by providing structured,
+      activity-based support that eliminates the need for:
+    </p>
+
+    <ul>
+      <li>Dedicated in-house printing infrastructure</li>
+      <li>Temporary or ad-hoc manpower for dispatch preparation</li>
+      <li>Repeated setup effort for recurring document formats</li>
+      <li>Inefficiencies caused by fragmented execution</li>
+    </ul>
+
+    <p>
+      Clients benefit from predictable, requirement-based costs aligned
+      with the actual work performed.
+    </p>
+  </section>
+
+  <section>
+    <h2>Improving Productivity</h2>
+
+    <p>
+      Administrative and operations teams are often required to divert
+      time and attention to manual preparation tasks during dispatch
+      cycles.
+    </p>
+
+    <p>
+      By outsourcing document preparation and pre-mailing activities
+      to Sendly, organisations are able to:
+    </p>
+
+    <ul>
+      <li>Allow staff to focus on approvals and core responsibilities</li>
+      <li>Reduce internal handovers and coordination effort</li>
+      <li>Manage peak dispatch volumes without disruption</li>
+      <li>Ensure consistency across large document batches</li>
+    </ul>
+
+    <p>
+      This results in improved turnaround times and smoother internal
+      workflows.
+    </p>
+  </section>
+
+  <section>
+    <h2>Where Sendly Fits</h2>
+
+    <p>
+      Sendly operates as a private service provider offering printing
+      and pre-mailing support services.
+    </p>
+
+    <p>
+      Our role is limited to preparation, execution, and dispatch
+      readiness. Postal booking, delivery, and tracking are governed
+      by applicable postal regulations and handled by the respective
+      postal service provider.
+    </p>
+  </section>
+
+  <section>
+    <h2>Who Typically Benefits</h2>
+
+    <ul>
+      <li>Banks and financial institutions</li>
+      <li>Educational institutions</li>
+      <li>Corporate offices</li>
+      <li>Associations and societies</li>
+      <li>Organisations handling recurring document dispatch</li>
+    </ul>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div style="margin-bottom:12px;">
+      © Sendly · Print & Pre-Mailing Support Services
+    </div>
+
+    <div style="margin-bottom:14px;">
+      <a href="mailto:contact@sendlyp2p.in">contact@sendlyp2p.in</a> |
+      <a href="tel:+916302583386">+91 63025 83386</a> |
+      <a href="https://wa.me/916302583386" target="_blank">WhatsApp</a>
+    </div>
+
+    <div style="max-width:720px; margin:0 auto 14px;">
+      Sendly is a private service provider offering printing and
+      pre-mailing support services. Posting and delivery are governed
+      by applicable postal regulations.
+    </div>
+
+    <div>
+      <a href="privacy.html">Privacy & Confidentiality</a>
+    </div>
+
+  </div>
+</footer>
+
+<!-- ================= WHATSAPP FLOAT ================= -->
+
+<a
+  href="https://wa.me/916302583386"
+  target="_blank"
+  class="whatsapp-float"
+  aria-label="Chat on WhatsApp">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="28" height="28" fill="#ffffff">
+    <path d="M16.003 3C9.383 3 4 8.383 4 15.003c0 2.647.87 5.1 2.344 7.078L4 29l7.137-2.297a11.92 11.92 0 0 0 4.866 1.031h.003c6.62 0 12.003-5.383 12.003-12.003C28.009 8.383 22.626 3 16.003 3z"/>
   </svg>
 
 </a>
 
-
-<body>
-
-<header class="site-header">
-  <div class="header-container">
-
-    <!-- Logo & Brand -->
-    <div class="logo-area">
-      <img src="logo.svg" alt="Sendly Logo" class="logo">
-      <div>
-        <strong>Sendly</strong><br>
-        <small>Print-to-Post Execution Partner</small>
-      </div>
-    </div>
-
-    <!-- Desktop Navigation -->
-    <nav class="nav-desktop">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="services.html">Services</a>
-      <a href="process.html">Process</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
-    <!-- Mobile Menu Button -->
-    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
-
-    <!-- Mobile Navigation -->
-    <nav class="nav-mobile">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="services.html">Services</a>
-      <a href="process.html">Process</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
-  </div>
-</header>
-<main class="container">
-
-  <h1>About Sendly</h1>
-
-  <p>
-    Sendly exists to support organisations that regularly handle
-    document-based communication and dispatch as part of their
-    administrative or operational workflows.
-  </p>
-
-  <p>
-    For many institutions, activities such as printing, folding,
-    addressing, and preparing documents for dispatch consume
-    significant staff time and operational effort, despite not being
-    core business functions.
-  </p>
-
-  <h2>Reducing Operational Costs</h2>
-
-  <p>
-    Managing document preparation in-house often requires maintaining
-    printing infrastructure, allocating manpower, and handling peak
-    workload variations.
-  </p>
-
-  <p>
-    Sendly helps reduce these costs by offering structured, activity-based
-    support services that eliminate the need for:
-  </p>
-
-  <ul>
-    <li>Dedicated in-house printing infrastructure</li>
-    <li>Temporary or ad-hoc manpower for dispatch preparation</li>
-    <li>Repeated setup effort for recurring document formats</li>
-    <li>Inefficiencies caused by fragmented execution</li>
-  </ul>
-
-  <p>
-    Clients benefit from predictable, requirement-based costs aligned
-    with actual work performed.
-  </p>
-
-  <h2>Improving Productivity</h2>
-
-  <p>
-    Administrative and operations teams are often required to divert
-    time and attention to manual preparation tasks during dispatch cycles.
-  </p>
-
-  <p>
-    By outsourcing document preparation and pre-mailing activities to
-    Sendly, organisations are able to:
-  </p>
-
-  <ul>
-    <li>Allow staff to focus on approvals and core responsibilities</li>
-    <li>Reduce internal handovers and coordination effort</li>
-    <li>Manage peak dispatch volumes without disruption</li>
-    <li>Ensure consistency across large document batches</li>
-  </ul>
-
-  <p>
-    This results in improved turnaround times and smoother internal
-    workflows.
-  </p>
-
-  <h2>Where Sendly Fits</h2>
-
-  <p>
-    Sendly operates as a private service provider offering printing and
-    pre-mailing support services.
-  </p>
-
-  <p>
-    Our role is limited to preparation, execution, and dispatch readiness.
-    Postal booking, delivery, and tracking are governed by applicable
-    postal regulations and handled by the respective postal service
-    provider.
-  </p>
-
-  <h2>Who Typically Benefits</h2>
-
-  <ul>
-    <li>Banks and financial institutions</li>
-    <li>Educational institutions</li>
-    <li>Corporate offices</li>
-    <li>Associations and societies</li>
-    <li>Organisations handling recurring document dispatch</li>
-  </ul>
-
-</main>
-
-<footer style="
-  border-top:1px solid #e5e5e5;
-  padding:24px 16px;
-  text-align:center;
-  font-size:14px;
-">
-
-  <div style="margin-bottom:12px; font-weight:500; color:#2F3A44;">
-    © Sendly · Print & Pre-Mailing Support Services
-  </div>
-
-  <div style="margin-bottom:14px; color:#5F6B75;">
-    <a href="mailto:contact@sendlyp2p.in">contact@sendlyp2p.in</a>
-    &nbsp;|&nbsp;
-    <a href="tel:+916302583386">+91 63025 83386</a>
-    &nbsp;|&nbsp;
-    <a href="sms:+916302583386">SMS</a>
-    &nbsp;|&nbsp;
-    <a href="https://wa.me/916302583386" target="_blank">WhatsApp</a>
-  </div>
-
-  <div style="
-    max-width:720px;
-    margin:0 auto 14px;
-    color:#7A8691;
-    line-height:1.6;
-  ">
-    Sendly is a private service provider offering printing and pre-mailing
-    support services. Posting and delivery are governed by applicable
-    postal regulations.
-  </div>
-
-  <div>
-    <a href="privacy.html">Privacy & Confidentiality</a>
-  </div>
-
-</footer>
+<!-- ================= JS ================= -->
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".menu-toggle");
-    const mobileNav = document.querySelector(".nav-mobile");
-
-    if (toggle && mobileNav) {
-      toggle.addEventListener("click", function () {
-        mobileNav.classList.toggle("open");
-      });
-    }
-  });
+  function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("active");
+  }
 </script>
-
 
 </body>
 </html>

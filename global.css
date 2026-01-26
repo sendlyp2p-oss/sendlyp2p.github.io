@@ -322,14 +322,17 @@ main > section:first-child {
   max-width: 900px;
   margin: auto;
   background: #ffffff;
-  padding: 48px 48px;
+  padding: 48px 56px;        /* slightly more horizontal balance */
   border-radius: 10px;
   box-shadow: 0 10px 28px rgba(11, 42, 74, 0.12);
-  text-align: left;
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start;  /* keep text left-aligned */
+}
+
+   .cta-inner > * {
+  max-width: 700px;
 }
 
 .cta-inner h2 {
@@ -358,6 +361,10 @@ main > section:first-child {
   box-shadow: 0 10px 24px rgba(15, 99, 182, 0.4);
 }
 
+.cta-inner .cta-button {
+  align-self: flex-start;
+}
+
 .cta-button:hover {
   background: var(--sendly-orange);
   box-shadow: 0 10px 26px rgba(242, 106, 33, 0.4);
@@ -372,6 +379,11 @@ main > section:first-child {
 
   .cta-button {
     font-size: 17px;
+  }
+
+   .cta-inner {
+    padding-left: 64px;
+    padding-right: 64px;
   }
 }
 

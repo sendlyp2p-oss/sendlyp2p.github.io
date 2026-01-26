@@ -351,14 +351,19 @@ main > section:first-child {
 .cta-button {
   margin-top: 32px;
   padding: 18px 48px;
+
   background: var(--sendly-blue);
   color: #ffffff;
+
+  border: 2px solid var(--sendly-blue);   /* NEW */
   border-radius: 10px;
+
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.3px;
   text-decoration: none;
-  box-shadow: 0 10px 24px rgba(15, 99, 182, 0.4);
+
+  box-shadow: 0 10px 24px rgba(15, 99, 182, 0.35);
 }
 
 .cta-inner .cta-button {
@@ -366,8 +371,11 @@ main > section:first-child {
 }
 
 .cta-button:hover {
-  backg   round: var(--sendly-orange);
-  box-shadow: 0 10px 26px rgba(242, 106, 33, 0.4);
+  background: #ffffff;                     /* invert */
+  color: var(--sendly-blue);
+  border-color: var(--sendly-blue);
+
+  box-shadow: 0 12px 28px rgba(15, 99, 182, 0.35);
 }
 
 /* ---------- DESKTOP ENHANCEMENT ---------- */

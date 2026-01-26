@@ -311,7 +311,7 @@ main > section:first-child {
 /* ---------- CTA SECTION ---------- */
 
 .cta-section {
-  background: #f4f8fc;              /* clear panel background */
+  background: #f4f8fc;
   padding: 80px 20px;
   margin-top: 80px;
   border-top: 1px solid var(--sendly-border);
@@ -325,9 +325,13 @@ main > section:first-child {
   padding: 48px 48px;
   border-radius: 10px;
   box-shadow: 0 10px 28px rgba(11, 42, 74, 0.12);
-  text-align: left;                 /* KEY FIX */
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-   
+
 .cta-inner h2 {
   font-size: 32px;
   margin-bottom: 12px;
@@ -341,56 +345,43 @@ main > section:first-child {
   color: #4d6b8a;
 }
 
-
 .cta-button {
-  display: inline-block;
-  padding: 16px 40px;
+  margin-top: 32px;
+  padding: 18px 48px;
   background: var(--sendly-blue);
   color: #ffffff;
-  border-radius: 8px;
-  font-weight: 600;
+  border-radius: 10px;
+  font-weight: 700;
   font-size: 16px;
+  letter-spacing: 0.3px;
   text-decoration: none;
-  box-shadow: 0 8px 20px rgba(15, 99, 182, 0.35);
+  box-shadow: 0 10px 24px rgba(15, 99, 182, 0.4);
 }
 
 .cta-button:hover {
   background: var(--sendly-orange);
-  box-shadow: 0 8px 20px rgba(242, 106, 33, 0.35);
+  box-shadow: 0 10px 26px rgba(242, 106, 33, 0.4);
 }
-   
-}
+
+/* ---------- DESKTOP ENHANCEMENT ---------- */
+
 @media (min-width: 1024px) {
-
   .cta-section {
-  background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    var(--sendly-light-bg) 30%,
-    var(--sendly-light-bg) 100%
-  );
-  padding: 100px 20px 80px;
-  margin-top: 80px;
-  border-top: 1px solid var(--sendly-border);
-}
-
-
-  .cta-inner h2 {
-    font-size: 32px;
+    padding: 100px 20px 80px;
   }
 
-  .cta-inner p {
+  .cta-button {
     font-size: 17px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
+
+/* ---------- MOBILE ADJUSTMENTS ---------- */
 
 @media (max-width: 768px) {
   .cta-inner {
     padding: 32px 24px;
     text-align: center;
+    align-items: center;
   }
 
   .cta-inner p {

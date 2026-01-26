@@ -288,41 +288,47 @@ main > section:first-child {
 /* ---------- CTA SECTION ---------- */
 
 .cta-section {
-  background: var(--sendly-light-bg);
-  padding: 60px 20px;
-  margin-top: 60px;
+  background: #f4f8fc;              /* clear panel background */
+  padding: 80px 20px;
+  margin-top: 80px;
+  border-top: 1px solid var(--sendly-border);
+  border-bottom: 1px solid var(--sendly-border);
 }
 
 .cta-inner {
-  max-width: 900px;          /* SAME AS CONTENT */
+  max-width: 900px;
   margin: auto;
-  text-align: center;
   background: #ffffff;
-  padding: 56px 40px;
+  padding: 48px 48px;
   border-radius: 10px;
-  box-shadow: 0 12px 32px rgba(11, 42, 74, 0.12);
+  box-shadow: 0 10px 28px rgba(11, 42, 74, 0.12);
+  text-align: left;                 /* KEY FIX */
 }
-
+   
 .cta-inner h2 {
-  font-size: 26px;
+  font-size: 32px;
   margin-bottom: 12px;
+  color: var(--sendly-navy);
 }
 
 .cta-inner p {
-  margin-bottom: 24px;
+  font-size: 17px;
+  max-width: 680px;
+  margin-bottom: 28px;
+  color: #4d6b8a;
 }
+
 
 .cta-button {
   display: inline-block;
-  padding: 16px 44px;
+  padding: 16px 40px;
   background: var(--sendly-blue);
   color: #ffffff;
   border-radius: 8px;
   font-weight: 600;
   font-size: 16px;
   text-decoration: none;
-  margin-top: 20px;
-  box-shadow: 0 6px 16px rgba(15, 99, 182, 0.35);
+  box-shadow: 0 8px 20px rgba(15, 99, 182, 0.35);
 }
 
 .cta-button:hover {
@@ -353,6 +359,18 @@ main > section:first-child {
   .cta-inner p {
     font-size: 17px;
     max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-inner {
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  .cta-inner p {
     margin-left: auto;
     margin-right: auto;
   }

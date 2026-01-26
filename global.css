@@ -250,8 +250,6 @@ li {
   max-width: 700px;
 }
 
-/* CENTERED CTA BUTTON – GUARANTEED */
-
 .cta-action {
   display: flex;
   justify-content: center;
@@ -274,6 +272,63 @@ li {
   color: var(--sendly-blue);
 }
 
+/* ---------- 8. FORMS (CONTACT PAGE) ---------- */
+
+form {
+  max-width: 700px;
+  margin-top: 24px;
+}
+
+form label {
+  display: block;
+  font-weight: 500;
+  color: var(--sendly-navy);
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 15px;
+  border: 1px solid var(--sendly-border);
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: var(--sendly-blue);
+  box-shadow: 0 0 0 2px rgba(15, 99, 182, 0.15);
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button,
+form .button {
+  margin-top: 28px;
+  padding: 14px 36px;
+  background: var(--sendly-blue);
+  color: #ffffff;
+  border: 2px solid var(--sendly-blue);
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+}
+
+form button:hover,
+form .button:hover {
+  background: #ffffff;
+  color: var(--sendly-blue);
+}
+
 /* ---------- RESPONSIVE ---------- */
 
 @media (max-width: 768px) {
@@ -285,17 +340,16 @@ li {
     display: block;
   }
 
-  
   .container {
     padding: 16px;
   }
-   
-   .brand-text .tagline {
-  display: block;
-  font-size: 11px;
-  line-height: 1.2;
-  color: #6b7f94;
-}
+
+  .brand-text .tagline {
+    display: block;
+    font-size: 11px;
+    line-height: 1.2;
+    color: #6b7f94;
+  }
 
   h1 {
     font-size: 24px;
@@ -315,6 +369,8 @@ li {
     margin-right: auto;
   }
 }
+
+/* ---------- FLOATING WHATSAPP ---------- */
 
 .whatsapp-float {
   position: fixed;

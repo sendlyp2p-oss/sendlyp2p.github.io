@@ -285,13 +285,17 @@ li {
     display: block;
   }
 
-  .brand-text .tagline {
-    display: none;
-  }
-
+  
   .container {
     padding: 16px;
   }
+   
+   .brand-text .tagline {
+  display: block;
+  font-size: 11px;
+  line-height: 1.2;
+  color: #6b7f94;
+}
 
   h1 {
     font-size: 24px;

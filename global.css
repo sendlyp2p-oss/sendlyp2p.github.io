@@ -4,7 +4,8 @@
 
 /* ---------- 1. FONT & RESET ---------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
 
 :root {
   --sendly-navy: #0b2a4a;
@@ -21,10 +22,8 @@
 }
 
 body {
-  font-family: 'Forum', serif;
-  background-color: #ffffff;
-  color: var(--sendly-navy);
-  line-height: 1.6;
+  font-family: 'Ubuntu', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  ...
 }
 
 /* ---------- 2. LINKS & TEXT ---------- */
@@ -64,7 +63,7 @@ ul {
 
 /* Brand block */
 .brand {
-  display: flex;
+     display: flex;
   align-items: center;
   gap: 12px;
 }

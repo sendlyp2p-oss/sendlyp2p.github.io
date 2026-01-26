@@ -362,11 +362,11 @@ main > section:first-child {
 }
 
 .cta-inner .cta-button {
-  align-self: flex-start;
+  align-self: center;
 }
 
 .cta-button:hover {
-  background: var(--sendly-orange);
+  backg   round: var(--sendly-orange);
   box-shadow: 0 10px 26px rgba(242, 106, 33, 0.4);
 }
 

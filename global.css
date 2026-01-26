@@ -298,9 +298,9 @@ main > section:first-child {
   margin: auto;
   text-align: center;
   background: #ffffff;
-  padding: 48px 32px;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(11, 42, 74, 0.08);
+  padding: 56px 40px;
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(11, 42, 74, 0.12);
 }
 
 .cta-inner h2 {
@@ -314,33 +314,45 @@ main > section:first-child {
 
 .cta-button {
   display: inline-block;
-  padding: 14px 34px;
+  padding: 16px 44px;
   background: var(--sendly-blue);
   color: #ffffff;
-  border-radius: 6px;
-  font-weight: 500;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 20px;
+  box-shadow: 0 6px 16px rgba(15, 99, 182, 0.35);
 }
 
 .cta-button:hover {
   background: var(--sendly-orange);
+  box-shadow: 0 8px 20px rgba(242, 106, 33, 0.35);
 }
    
 }
 @media (min-width: 1024px) {
 
   .cta-section {
-    padding: 80px 20px;
-  }
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    var(--sendly-light-bg) 30%,
+    var(--sendly-light-bg) 100%
+  );
+  padding: 100px 20px 80px;
+  margin-top: 80px;
+  border-top: 1px solid var(--sendly-border);
+}
+
 
   .cta-inner h2 {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .cta-inner p {
-    font-size: 16px;
-    max-width: 680px;
+    font-size: 17px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
   }
